@@ -1,4 +1,4 @@
 ﻿Subaru;XV; 2016;23950;email@gmail.com;This car is super fun to drive.;Private;;1234567891;John Miller
 Volkswagon;Jetta;2013;16500;dealer@dealership.com;Used car with clean title;Dealer;k3sgw54;; 
-Toyota; Tundra;2001;7000;cheapo@gmail.com;Truck is as-is. Needs headlight replaced.;Private;;1234561231;Carol Monahan
+Toyota;Tundra;2001;7000;cheapo@gmail.com;Truck is as-is. Needs headlight replaced.;Private;;1234561231;Carol Monahan
 Fiat;Abarth 595;2016;26888;dealer@dealership.com;Brand new!;Dealer;346l3hh;; 

@@ -28,10 +28,13 @@
 <p>To inquire further please provide us some contact details:</p>
 @using (Html.BeginForm("Enquire", "Details", FormMethod.Post))
 {
-    @Html.Label("Name")
-    @Html.TextBox("Name")
-    @Html.Label("Email")
-    @Html.TextBox("Email")
+    <div>
+        @Html.Label("Name") @Html.TextBox("Name", "", new {required = "required"})
+        <span></span>
+    </div>
+    <div>
+        @Html.Label("Email") @Html.TextBox("Email", "", new { required = "required" })
+    </div>
     @Html.Hidden("carId", @ViewData["CarId"])
     <input type="submit" value="Inquire"/>
 }

@@ -6,7 +6,7 @@ namespace CarDetails.Controllers
     public class DetailsController : Controller
     {
         [HttpGet]
-        public ActionResult Details(string carid)
+        public ActionResult Enquire(string carid)
         {
             var car = Car.Details(carid);
             string mainInfo = car.Year + " " +
@@ -26,6 +26,10 @@ namespace CarDetails.Controllers
         [HttpPost]
         public ActionResult Enquire(Enquiry enquiry)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(enquiry);
+            }
             var car = Car.Details(enquiry.CarId);
             car.AddEnquiryToCar(enquiry);
             ViewBag.Name = enquiry.Name;

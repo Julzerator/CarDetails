@@ -5,7 +5,7 @@
 <ul>
     @foreach (var car in Model)
     {
-        <li>@car.Year @car.Make @car.Model for $@car.Price @Html.ActionLink("See More Details", "Details", "Details", new {car.CarId}, null)</li>
+        <li>@car.Year @car.Make @car.Model for $@car.Price @Html.ActionLink("See More Details", "Enquire", "Details", new {car.CarId}, null)</li>
     }
 </ul>
 
