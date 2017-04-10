@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CarDetails.Models
+﻿namespace CarDetails.Models
 {
     public class Enquiry
     {
