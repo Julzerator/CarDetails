@@ -1,0 +1,11 @@
+﻿@model List<CarDetails.Models.Car>
+
+<h2>List of cars currently available</h2>
+<hr/>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@car.Year @car.Make @car.Model for $@car.Price @Html.ActionLink("See More Details", "Details", "Details", new {car.CarId}, null)</li>
+    }
+</ul>
+

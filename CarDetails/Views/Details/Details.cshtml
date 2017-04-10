@@ -1,0 +1,39 @@
+﻿@using System.Web.Mvc.Html
+@model CarDetails.Models.Enquiry
+
+<h2>@ViewBag.CarMain</h2>
+
+<h3>@ViewBag.ListingType Listing</h3>
+
+<hr/>
+<p>@ViewBag.Comments</p>
+<p>Seller info:</p>
+<p>Email: @ViewBag.SellerEmail<br/>
+    @if (ViewBag.ListingType == "Dealer")
+    {
+        <span>Dealer ABN: @ViewBag.DealerABN</span>
+    }
+    else
+    {
+        <span>
+            Contact: @ViewBag.ContactName<br />
+            Phone: @ViewBag.Phone
+        </span>
+    }
+    
+</p>
+
+<hr/>
+
+<p>To inquire further please provide us some contact details:</p>
+@using (Html.BeginForm("Enquire", "Details", FormMethod.Post))
+{
+    @Html.Label("Name")
+    @Html.TextBox("Name")
+    @Html.Label("Email")
+    @Html.TextBox("Email")
+    @Html.Hidden("carId", @ViewData["CarId"])
+    <input type="submit" value="Inquire"/>
+}
+<hr/>
+<p>@Html.ActionLink("Go back to the list...", "Index", "Car")</p>

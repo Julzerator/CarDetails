@@ -1,0 +1,23 @@
+﻿C# MVC Practical Exercise
+
+Write a c#.net MVC application to display a list of cars.
+When the user selects a car, they are taken to a details page for that car.
+The details page will display all the details for a car and an enquiry form.
+The enquiry form needs to have 2 fields – Name and Email, both mandatory.
+On successful submission of the enquiry form, the user is taken to a thank you page. The enquiry
+needs to be recorded.*
+
+A car has the following properties:
+•             Make
+•             Model
+•             Year
+•             Price
+•             Email
+•             ListingType (Dealer or Private)
+•             Contact Name (private cars only)
+•             Phone (private cars only)
+•             Dealer ABN (dealer cars only)
+•             Comments
+
+* For this exercise there is no need to read or write to a database. Data can be persisted in memory.
+The solution must be in the form of a visual studio project ready to run.
